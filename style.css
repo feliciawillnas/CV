@@ -7,21 +7,35 @@
 
 body {
     font-family: 'Readex Pro', sans-serif;
-    background-color: rgb(189, 189, 189);
+    background-color: #dadada;
     color: rgb(46, 46, 46);;
+}
+
+header {
+    height: 250px; 
 }
 
 .sidebar {
     position: fixed;
-    background-color: rgb(189, 189, 189);
+    background-color: #dadada;
     height: 100%;
     width: 250px;
     border-right: 1px solid rgb(103, 103, 103);
 }
 
+main {
+    margin-left: 350px;
+    margin-right: 100px;
+}
+
 h1 {
     font-size: 19px;
     padding: 30px;
+}
+
+h3 {
+    font-size: 55px;
+    margin-bottom: 15px;
 }
 
 ul {
@@ -43,38 +57,27 @@ li:hover {
     transition: 0.5s;
 }
 
-main {
-    margin-left: 350px;
-    margin-right: 100px;
+img {
+    
 }
 
-header {
-    height: 250px; 
-}
-
+/** Information divs **/ 
 .about {
-    width: 700px;
     float:right; 
     text-align: right;
 }
 
-h3 {
-    font-size: 44px;
-    margin-bottom: 15px;
-}
-
 .projects {
     margin-top: 700px;
-    width: 700px;
     float:left; 
     text-align: left;
 }
 
 .contact {
     margin-top: 700px;
-    width: 700px;
     float:right; 
     text-align: right;
+    margin-bottom: 150px;
 }
 
 .date {
@@ -86,6 +89,15 @@ h3 {
 @media (max-width: 768px) {
     body {
       background: lightcoral;
+    }
+
+    main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    header {
+        height: 300px; 
     }
 
     .sidebar {
