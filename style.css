@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+/* Desktop */
+
 body {
     font-family: 'Readex Pro', sans-serif;
     background-color: rgb(189, 189, 189);
@@ -78,3 +80,24 @@ h3 {
 .date {
     font-family: 'Jura', sans-serif;
 }
+
+
+/* Tablet */
+@media (max-width: 768px) {
+    body {
+      background: lightcoral;
+    }
+
+    .sidebar {
+        height: fit-content;
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
+  }
+
+  /* Mobile */ 
+  @media (max-width: 360px) {
+    body {
+        background-color: blue;
+    }
+  }
