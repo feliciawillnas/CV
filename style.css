@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    height: 150px; 
+    height: 120px; 
 }
 
 main {
@@ -63,6 +63,7 @@ h4 {
 
 .nav-li {
     list-style: none;
+    font-family: 'Readex Pro', sans-serif;
 }
 
 .nav-li a {
@@ -78,6 +79,7 @@ h4 {
 
 /** About Section **/ 
 .about-section {
+    
 }
 
 #about {
@@ -100,6 +102,11 @@ h4 {
 }
 
 /** Project Section **/ 
+/**#project-section {
+    margin-left: 450px;
+    margin-right: 200px;
+}**/
+
 .project-description {
     margin-bottom: 5rem;
 }
@@ -113,28 +120,34 @@ h4 {
     margin-top: 2rem; 
 }
 
+.project-info-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
 .project-name {
     font-family: 'Fragment Mono', monospace;
-    margin-bottom: 2rem;
+    font-size: 12px;
+}
+
+.project-date {
+    font-family: 'Fragment Mono', monospace;
+    color: red;
+    font-size: 12px;
 }
 
 .project-img {
     width: 230px;
     height: 230px;
-    background-color: gray;
     margin-bottom:2rem;
     border: 1.5px solid black;
 }
 
-.project-date {
-    font-family: 'Jura', sans-serif;
-    margin-bottom: 10px;
-    color: red;
-}
-
-.project-info-box {
-    display: flex;
-    justify-content: space-between;
+img {
+    width: 230px;
+    height: 230px;
+    object-fit:cover;
 }
 
 /** Contact Section **/ 
@@ -142,6 +155,7 @@ h4 {
 .contact-section {
     margin-top: 7rem;
     width: 100%;
+    height: 200px;
     background-color: #333;
 }
 
@@ -156,7 +170,6 @@ h4 {
 
 #contact-title {
     color: white;
-
 }
 
 .contact-li {
@@ -181,6 +194,8 @@ h4 {
 
 li {
     list-style-type: none;
+    margin-bottom: 5px;
+    font-family: 'Jura', sans-serif;
 }
 
 hr {
@@ -220,19 +235,24 @@ hr {
         margin: 2rem;
         margin-bottom: 00;
     }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+    }
 }
 
 /* Mobile */ 
 @media (max-width: 375px) {
 
     .all-projects {
-       display: block;
+       display: grid; 
     }
 
+    .project-article {
+        align-items: center; 
+    }
 }
-
-
-
 
 .poster-text {
     margin-right: auto;
