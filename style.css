@@ -7,17 +7,12 @@
 
 body {
     font-family: 'Readex Pro', sans-serif;
-    background-color: #dbdad1;
+    background-color: #bebebe;
     color: rgb(11, 11, 11);;
 }
 
 header {
-    height: 120px; 
-}
-
-main {
-    margin-left: 450px;
-    margin-right: 200px;
+    height: 100px; 
 }
 
 /** Text Styling **/ 
@@ -31,7 +26,7 @@ h3 {
     font-size: 60px;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    font-family: 'Russo One', sans-serif;
+    font-family: 'Fragment Mono', monospace;
     color: black;
 }
 
@@ -50,7 +45,7 @@ h4 {
 /** Sidebar Classes **/ 
 .sidebar {
     position: fixed;
-    background-color: #dbdad1;
+    background-color: #bebebe;
     height: 100%;
     width: 250px;
     border-right: 1.5px solid rgb(103, 103, 103);
@@ -78,34 +73,29 @@ h4 {
 
 
 /** About Section **/ 
-.about-section {
-    
-}
 
 #about {
     margin-right: auto;
     text-align: right;
+    margin-bottom: 100px;
 }
 
 /** Experience Section **/ 
 .grid-container {
+
     display: grid;
     grid-template-columns: repeat(3, 20%);
     grid-column-gap: 10px; 
     align-items: center;
     justify-content: space-around;
     padding: 10px;
+    font-size: 18px;
+    font-family: 'Fragment Mono', monospace;
 }
 
 .experience-title {
     margin-top: 2rem;
 }
-
-/** Project Section **/ 
-/**#project-section {
-    margin-left: 450px;
-    margin-right: 200px;
-}**/
 
 .project-description {
     margin-bottom: 5rem;
@@ -114,6 +104,10 @@ h4 {
 .all-projects {
     display: flex;
     justify-content: space-around;
+}
+
+.project-title {
+    margin-top: 100px;
 }
 
 .project-article {
@@ -133,7 +127,7 @@ h4 {
 
 .project-date {
     font-family: 'Fragment Mono', monospace;
-    color: red;
+    color: rgb(255, 0, 0);
     font-size: 12px;
 }
 
@@ -148,6 +142,11 @@ img {
     width: 230px;
     height: 230px;
     object-fit:cover;
+}
+
+.project-img:hover{
+    transition: 0.5s;
+    transform: scale(1.05);
 }
 
 /** Contact Section **/ 
@@ -188,14 +187,30 @@ img {
 
 
 /** General Classes **/ 
+
+.main-margin {
+    margin-left: 450px;
+    margin-right: 200px;
+}
+
 .description {
     margin-bottom: 50px;
 }
 
 li {
+    font-size: 16px;
     list-style-type: none;
     margin-bottom: 5px;
     font-family: 'Jura', sans-serif;
+}
+
+hr.bold {
+    border: none;
+    border-top: 4px solid rgb(103, 103, 103);
+    color: #333;
+    overflow:visible;
+    height: 5px;
+    margin-top: 80px;
 }
 
 hr {
@@ -204,7 +219,7 @@ hr {
     color: #333;
     overflow:visible;
     height: 5px;
-    margin-top: 80px;
+    margin-top: 30px;
     width: 100%;
 }
 
@@ -223,12 +238,8 @@ hr {
         border-bottom: 1px solid black;
     }
 
-    main {
+    .main-margin {
         margin: 2rem;
-    }
-
-    .project-article {
-        /** centrera **/  
     }
 
     .contact-main {
@@ -252,10 +263,8 @@ hr {
     .project-article {
         align-items: center; 
     }
-}
 
-.poster-text {
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
+    h3 {
+        font-size: 50px;
+    }
 }
