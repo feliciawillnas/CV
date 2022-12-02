@@ -9,7 +9,14 @@ body {
     font-family: 'Readex Pro', sans-serif;
     background-color: #bebebe;
     color: rgb(11, 11, 11);;
-    
+
+    opacity: 1;
+    transition-duration: 0.7s;
+    transition-property: opacity;
+}
+
+body.fade {
+    opacity: 0;
 }
 
 header {

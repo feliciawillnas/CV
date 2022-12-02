@@ -2,7 +2,19 @@ window.addEventListener("DOMContentLoaded", main);
 
 function main() {
     activeTab();
+    fadePage();
 }
+
+
+/**
+ * Tar bort alla klasser från body med en transition.
+ */
+  function fadePage() {
+    window.setTimeout(function() {
+        document.body.className = '';
+      }, 330);
+    };
+
 
 /**
  * Skapar en click event, då användaren klickar i nav-baren skall active-klassen läggas på den klickade länken.
