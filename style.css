@@ -150,6 +150,11 @@ img {
     height: 230px;
     object-fit:cover;
 }
+.center {
+    width: 230px;
+    height: 230px;
+    object-fit:contain;
+}
 
 .project-img:hover{
     transition: 0.5s;
