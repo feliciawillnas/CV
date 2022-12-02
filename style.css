@@ -9,6 +9,7 @@ body {
     font-family: 'Readex Pro', sans-serif;
     background-color: #bebebe;
     color: rgb(11, 11, 11);;
+    
 }
 
 header {
@@ -73,7 +74,6 @@ h4 {
 
 
 /** About Section **/ 
-
 #about {
     margin-right: auto;
     text-align: right;
@@ -150,7 +150,6 @@ img {
 }
 
 /** Contact Section **/ 
-
 .contact-section {
     margin-top: 7rem;
     width: 100%;
@@ -187,7 +186,6 @@ img {
 
 
 /** General Classes **/ 
-
 .main-margin {
     margin-left: 450px;
     margin-right: 200px;
